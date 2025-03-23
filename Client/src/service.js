@@ -1,5 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5283';
+axios.defaults.baseURL = process.env.REACT_APP_address;
 axios.interceptors.response.use(
   (response) => {
     // אם התגובה תקינה, מחזירים אותה
